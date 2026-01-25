@@ -142,7 +142,7 @@ export default async function IndustryPage({ params }: PageProps) {
         <main className="min-h-screen bg-background overflow-x-hidden">
             <Navbar />
             <IndustryHero industry={industry} />
-            <Features />
+            <Features industrySlug={slug} />
             <JobSnaps />
             <HowItWorks />
             <IndustryShowcase industry={industry} />

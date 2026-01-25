@@ -1,8 +1,15 @@
-export default function Features() {
+import Link from 'next/link';
+
+interface FeaturesProps {
+    industrySlug?: string;
+}
+
+export default function Features({ industrySlug }: FeaturesProps) {
     const features = [
         {
             title: "Full Website Build",
             description: "SEO-optimized, mobile-responsive website designed for local service businesses",
+            siloSlug: "website-structure",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -14,6 +21,7 @@ export default function Features() {
         {
             title: "Google Business Profile Integration",
             description: "Sync your GBP data and auto-post completed jobs to boost visibility",
+            siloSlug: "google-business-profile-seo",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -24,6 +32,7 @@ export default function Features() {
         {
             title: "CRM + Booking Calendar",
             description: "Manage leads, appointments, and customer pipelines in one place",
+            siloSlug: "crm-and-booking",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -36,6 +45,7 @@ export default function Features() {
         {
             title: "AI Chatbot + Text Automation",
             description: "24/7 customer engagement with intelligent responses and follow-ups",
+            siloSlug: "automations",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -45,6 +55,7 @@ export default function Features() {
         {
             title: "Review Management",
             description: "Automated review requests and AI-powered auto-replies to build trust",
+            siloSlug: "review-generation",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -54,6 +65,7 @@ export default function Features() {
         {
             title: "Missed Call Text Back",
             description: "Never lose a lead — automatic text when you miss a call",
+            siloSlug: "automations",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -63,6 +75,7 @@ export default function Features() {
         {
             title: "On-Page SEO + Hosting",
             description: "Optimized for search engines with unlimited hosting included",
+            siloSlug: "local-seo",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
@@ -73,6 +86,7 @@ export default function Features() {
         {
             title: "GrowLocal 360 JobSnaps",
             description: "Turn every job into proof — auto-post to GBP and generate SEO content",
+            siloSlug: "job-snaps",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
@@ -83,6 +97,7 @@ export default function Features() {
         {
             title: "Unlimited Edits",
             description: "Make changes anytime — we handle updates for you",
+            siloSlug: "automations",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -101,20 +116,49 @@ export default function Features() {
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6">
-                    {features.map((feature, index) => (
-                        <div
-                            key={index}
-                            className="p-6 rounded-2xl border border-border hover:border-transparent hover:shadow-xl transition-all duration-300 group bg-white"
-                        >
-                            <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4 text-black group-hover:scale-110 transition-transform">
-                                {feature.icon}
+                    {features.map((feature, index) => {
+                        const cardContent = (
+                            <>
+                                <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4 text-black group-hover:scale-110 transition-transform">
+                                    {feature.icon}
+                                </div>
+                                <h3 className="text-lg font-bold mb-2 text-foreground">{feature.title}</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed">
+                                    {feature.description}
+                                </p>
+                                {industrySlug && feature.siloSlug && (
+                                    <span className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-black">
+                                        Learn more
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </span>
+                                )}
+                            </>
+                        );
+
+                        if (industrySlug && feature.siloSlug) {
+                            return (
+                                <Link
+                                    key={index}
+                                    href={`/${industrySlug}/${feature.siloSlug}`}
+                                    className="p-6 rounded-2xl border border-border hover:border-transparent hover:shadow-xl transition-all duration-300 group bg-white block"
+                                >
+                                    {cardContent}
+                                </Link>
+                            );
+                        }
+
+                        return (
+                            <div
+                                key={index}
+                                className="p-6 rounded-2xl border border-border hover:border-transparent hover:shadow-xl transition-all duration-300 group bg-white"
+                            >
+                                {cardContent}
                             </div>
-                            <h3 className="text-lg font-bold mb-2 text-foreground">{feature.title}</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                {feature.description}
-                            </p>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
