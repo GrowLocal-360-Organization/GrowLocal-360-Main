@@ -1,16 +1,19 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-border">
             <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-                <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M2 17L12 22L22 17" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M2 12L12 17L22 12" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    GrowLocal<span className="text-black">360</span>
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/images/grow-local-360-logo-black.svg"
+                        alt="GrowLocal 360"
+                        width={180}
+                        height={32}
+                        className="h-8 w-auto"
+                        priority
+                    />
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8">

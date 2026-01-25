@@ -1,11 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
         <footer className="bg-surface py-12 border-t border-border">
             <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-                <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground">
-                    GrowLocal<span className="text-black">360</span>
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/images/grow-local-360-logo-black.svg"
+                        alt="GrowLocal 360"
+                        width={160}
+                        height={28}
+                        className="h-7 w-auto"
+                    />
                 </Link>
 
                 <div className="text-gray-500 text-sm">
