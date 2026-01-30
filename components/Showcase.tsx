@@ -13,7 +13,7 @@ export default function Showcase() {
                     href="#"
                     className="inline-block bg-black hover:bg-gray-900 text-white px-10 py-4 rounded-full font-medium text-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 mb-8"
                 >
-                    Start Free Trial
+                    Create Free Account
                 </Link>
 
                 <div className="flex items-center justify-center gap-6 text-sm text-gray-500">
