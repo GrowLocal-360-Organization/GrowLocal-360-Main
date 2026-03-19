@@ -7,8 +7,8 @@ interface FeaturesProps {
 export default function Features({ industrySlug }: FeaturesProps) {
     const features = [
         {
-            title: "Full Website Build",
-            description: "SEO-optimized, mobile-responsive website designed for local service businesses",
+            title: "A Website Built to Rank — Not Just Look Good",
+            description: "Your site is structured around your Google Business Profile categories so every page targets the searches that bring in jobs.",
             siloSlug: "website-structure",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -19,8 +19,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "Google Business Profile Integration",
-            description: "Sync your GBP data and auto-post completed jobs to boost visibility",
+            title: "Turn Your Google Profile Into a Lead Machine",
+            description: "Sync your GBP data, auto-post completed jobs, and keep your profile active so you show up when local customers search.",
             siloSlug: "google-business-profile-seo",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -30,8 +30,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "CRM + Booking Calendar",
-            description: "Manage leads, appointments, and customer pipelines in one place",
+            title: "Capture, Track, and Close More Jobs",
+            description: "Manage leads and appointments in one place so nothing falls through the cracks between the first call and the finished job.",
             siloSlug: "crm-and-booking",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -43,8 +43,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "AI Chatbot + Text Automation",
-            description: "24/7 customer engagement with intelligent responses and follow-ups",
+            title: "Respond Faster, Even When You're Busy",
+            description: "AI-powered chat and text automation engages customers instantly — so you never lose a lead while you're on a job.",
             siloSlug: "automations",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -53,8 +53,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "Review Management",
-            description: "Automated review requests and AI-powered auto-replies to build trust",
+            title: "Get More 5-Star Reviews Without Chasing Customers",
+            description: "Automated review requests go out after every job. AI-powered replies keep your reputation strong and active.",
             siloSlug: "review-generation",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -63,8 +63,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "Missed Call Text Back",
-            description: "Never lose a lead — automatic text when you miss a call",
+            title: "Turn Missed Calls Into Booked Jobs",
+            description: "Automatic text-back when you miss a call keeps the conversation going and the lead warm until you can follow up.",
             siloSlug: "automations",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -73,8 +73,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "On-Page SEO + Hosting",
-            description: "Optimized for search engines with unlimited hosting included",
+            title: "Optimized for Google From Day One",
+            description: "On-page SEO, fast hosting, mobile-responsive design, and structured data are built in — not bolted on after launch.",
             siloSlug: "local-seo",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -84,8 +84,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "GrowLocal 360 JobSnaps",
-            description: "Turn every job into proof — auto-post to GBP and generate SEO content",
+            title: "Your Work Becomes Your Marketing Engine",
+            description: "Job Snaps turns every completed job into fresh website content and Google activity that compounds your visibility over time.",
             siloSlug: "job-snaps",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -95,8 +95,8 @@ export default function Features({ industrySlug }: FeaturesProps) {
             ),
         },
         {
-            title: "Unlimited Edits",
-            description: "Make changes anytime — we handle updates for you",
+            title: "Keep Your Site Fresh Without Constant Manual Updates",
+            description: "New jobs, reviews, and service area content keep your site active and relevant — without you having to touch the backend.",
             siloSlug: "automations",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -111,8 +111,12 @@ export default function Features({ industrySlug }: FeaturesProps) {
         <section id="features" className="py-24 bg-white">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16 max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">What&apos;s Included In Every Site</h2>
-                    <p className="text-xl text-gray-600">Everything you need to launch, automate, and grow your local service business.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                        Everything You Need to Rank Higher and Get More Calls
+                    </h2>
+                    <p className="text-xl text-gray-600">
+                        More than a website — a local visibility engine that turns your online presence into a consistent source of leads.
+                    </p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6">

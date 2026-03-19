@@ -61,10 +61,12 @@ export default function Industries() {
         <section id="industries" className="py-24 bg-gray-50">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16 max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Industries We Serve</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                        Built for Local Service Businesses That Need More Calls
+                    </h2>
                     <p className="text-xl text-gray-600">
-                        GrowLocal 360 is built for local home service businesses. We help you get more leads,
-                        automate your customer journey, and dominate your local market.
+                        Businesses that consistently show their work and stay active online
+                        have a clear advantage in local search. GrowLocal 360 is built for the trades that win with visibility.
                     </p>
                 </div>
 

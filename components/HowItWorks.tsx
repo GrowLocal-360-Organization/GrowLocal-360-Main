@@ -2,36 +2,34 @@ export default function HowItWorks() {
     const steps = [
         {
             number: "1",
-            title: "Choose Your Design",
-            description: "Select from professional templates designed specifically for local home service businesses.",
+            title: "Build Your Site",
+            description: "Choose the right GBP-first website structure for your business or client. Your site launches with SEO-optimized pages built around your actual services and service areas.",
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
                 </svg>
             ),
         },
         {
             number: "2",
-            title: "Fill Out The Form",
-            description: "Enter your business details, services, and service areas. Takes just 5 minutes.",
+            title: "Add Your Real-World Work",
+            description: "Upload job photos and details as you complete work in the field. AI helps you turn each job into compelling, optimized content in seconds.",
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
                 </svg>
             ),
         },
         {
             number: "3",
-            title: "Get Your Site",
-            description: "Your SEO-optimized website goes live instantly with CRM, booking, and automation included.",
+            title: "Turn That Work Into Visibility",
+            description: "GrowLocal transforms your activity into website content, Google updates, and stronger local authority — so every job you finish brings in the next one.",
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                 </svg>
             ),
         },
@@ -41,8 +39,10 @@ export default function HowItWorks() {
         <section id="how-it-works" className="py-24 bg-gray-50">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Everything You Need to Launch Sites</h2>
-                    <p className="text-xl text-gray-600">From template to live site in three simple steps</p>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+                        From Job to Ranking in 3 Simple Steps
+                    </h2>
+                    <p className="text-xl text-gray-600">Launch fast, then grow your visibility with every job you complete.</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

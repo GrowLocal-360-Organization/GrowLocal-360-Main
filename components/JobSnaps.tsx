@@ -1,8 +1,8 @@
 export default function JobSnaps() {
     const features = [
         {
-            title: "Job Photo Uploads",
-            description: "Upload before/after photos from completed repairs to showcase your work",
+            title: "Show Proof of Real Work",
+            description: "Upload photos from completed jobs to build trust and authenticity that generic stock imagery never will.",
             icon: (
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
@@ -11,8 +11,8 @@ export default function JobSnaps() {
             ),
         },
         {
-            title: "AI-Generated Job Descriptions",
-            description: "Automatically create compelling service descriptions optimized for SEO",
+            title: "Turn Photos Into SEO Content",
+            description: "AI transforms your job details into optimized descriptions and content — no writing required on your end.",
             icon: (
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -24,8 +24,8 @@ export default function JobSnaps() {
             ),
         },
         {
-            title: "Auto-Posting to Google Business Profile",
-            description: "Completed jobs automatically post to your GBP to boost visibility",
+            title: "Stay Active on Google",
+            description: "Publish job updates that keep your Google Business Profile fresh, visible, and ahead of competitors who sit idle.",
             icon: (
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="18" cy="5" r="3"></circle>
@@ -37,28 +37,26 @@ export default function JobSnaps() {
             ),
         },
         {
-            title: "Website Embedding",
-            description: "Seamlessly integrate job showcases via plugin or iframe on your site",
+            title: "Keep Your Website Growing",
+            description: "Every completed job creates fresh, relevant content that supports your local rankings week after week.",
             icon: (
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="16 18 22 12 16 6"></polyline>
-                    <polyline points="8 6 2 12 8 18"></polyline>
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                 </svg>
             ),
         },
         {
-            title: "EEAT & SEO Content Automation",
-            description: "Service and city-specific pages automatically generated for ranking",
+            title: "Build Authority Google Can Trust",
+            description: "Real proof of completed work strengthens your Experience, Expertise, Authority, and Trust signals.",
             icon: (
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="M12 6v6l4 2"></path>
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
             ),
         },
         {
-            title: "Geo-Intent Optimization",
-            description: "Advanced local SEO optimization for dominating the Google Map Pack",
+            title: "Strengthen Service Area Relevance",
+            description: "Every job adds localized signals to the specific markets and neighborhoods you serve.",
             icon: (
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -77,23 +75,20 @@ export default function JobSnaps() {
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                         </svg>
-                        A True Local Performance Engine
+                        Core Differentiator
                     </div>
                 </div>
 
                 {/* Headline */}
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6">
-                    GrowLocal 360 <span className="bg-[#03d9c1] text-black px-2">Job Snaps®</span>
+                    Turn Every Job Into <span className="bg-[#03d9c1] text-black px-2">Proof</span>
                 </h2>
 
                 {/* Description */}
-                <p className="text-center text-gray-300 max-w-4xl mx-auto mb-16 text-lg leading-relaxed">
-                    Turn every job you do into <span className="underline decoration-2 underline-offset-4">PROOF</span>! Feed search engines what they are hungry for –{' '}
-                    <span className="underline decoration-2 underline-offset-4">Experience</span>,{' '}
-                    <span className="underline decoration-2 underline-offset-4">Expertise</span>,{' '}
-                    <span className="underline decoration-2 underline-offset-4">Authoritativeness</span>, and{' '}
-                    <span className="underline decoration-2 underline-offset-4">Trustworthiness</span>.{' '}
-                    This is an extremely powerful visibility booster, not a generic add-on. It directly enhances the results of your website and GBP as a cohesive system.
+                <p className="text-center text-gray-300 max-w-3xl mx-auto mb-16 text-lg leading-relaxed">
+                    Your best marketing is the work you already do. Job Snaps lets you upload photos from completed jobs,
+                    generate AI-assisted descriptions, and publish that proof across your website and Google Business Profile —
+                    so every job you finish strengthens your visibility and authority over time.
                 </p>
 
                 {/* Feature Cards */}
@@ -116,7 +111,7 @@ export default function JobSnaps() {
 
                 {/* Bottom Tagline */}
                 <p className="text-center text-gray-400 text-lg">
-                    A powerful visibility booster that drives more traffic and engagement to your business.
+                    If you&apos;re not showing your work, you&apos;re not ranking. Job Snaps changes that.
                 </p>
             </div>
         </section>
