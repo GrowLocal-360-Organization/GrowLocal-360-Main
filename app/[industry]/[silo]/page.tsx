@@ -32,6 +32,8 @@ function getSiloContent(industry: string, siloSlug: string): SiloPageContent | u
     return undefined;
 }
 
+const SITE_URL = "https://www.growlocal360.com";
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { industry, silo } = await params;
     const siloContent = getSiloContent(industry, silo);
@@ -40,9 +42,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         return { title: 'Not Found' };
     }
 
+    const pageUrl = `${SITE_URL}/${industry}/${silo}`;
+
     return {
         title: siloContent.seoTitle,
         description: siloContent.seoDescription,
+        alternates: {
+            canonical: pageUrl,
+        },
+        openGraph: {
+            title: siloContent.seoTitle,
+            description: siloContent.seoDescription,
+            url: pageUrl,
+            siteName: "GrowLocal 360",
+            type: "article",
+            images: [
+                {
+                    url: "/images/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    alt: siloContent.seoTitle,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: siloContent.seoTitle,
+            description: siloContent.seoDescription,
+            images: ["/images/og-image.png"],
+        },
     };
 }
 
@@ -194,8 +222,40 @@ export default async function SiloPage({ params }: PageProps) {
         notFound();
     }
 
+    const h1Parts = siloContent.h1.split(' ');
+    const restOfTitle = h1Parts.slice(2).join(' ') || siloContent.h1;
+
+    const breadcrumbJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: SITE_URL,
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: industry.name,
+                item: `${SITE_URL}/${industrySlug}`,
+            },
+            {
+                "@type": "ListItem",
+                position: 3,
+                name: restOfTitle,
+                item: `${SITE_URL}/${industrySlug}/${silo}`,
+            },
+        ],
+    };
+
     return (
         <main className="min-h-screen bg-background">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             <Navbar />
             <SiloHero content={siloContent} industrySlug={industrySlug} industry={industry} />
             <SiloContent content={siloContent} industrySlug={industrySlug} industry={industry} />

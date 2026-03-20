@@ -17,6 +17,8 @@ export async function generateStaticParams() {
     return slugs.map((industry) => ({ industry }));
 }
 
+const SITE_URL = "https://www.growlocal360.com";
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { industry: slug } = await params;
     const industry = getIndustryBySlug(slug);
@@ -27,9 +29,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         };
     }
 
+    const pageUrl = `${SITE_URL}/${slug}`;
+
     return {
-        title: `${industry.title} | GrowLocal 360`,
+        title: industry.title,
         description: industry.description,
+        alternates: {
+            canonical: pageUrl,
+        },
+        openGraph: {
+            title: `${industry.title} | GrowLocal 360`,
+            description: industry.description,
+            url: pageUrl,
+            siteName: "GrowLocal 360",
+            type: "website",
+            images: [
+                {
+                    url: "/images/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    alt: `${industry.title} — GrowLocal 360`,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${industry.title} | GrowLocal 360`,
+            description: industry.description,
+            images: ["/images/og-image.png"],
+        },
     };
 }
 
@@ -137,8 +165,31 @@ export default async function IndustryPage({ params }: PageProps) {
         notFound();
     }
 
+    const breadcrumbJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: SITE_URL,
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: industry.name,
+                item: `${SITE_URL}/${slug}`,
+            },
+        ],
+    };
+
     return (
         <main className="min-h-screen bg-background overflow-x-hidden">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+            />
             <Navbar />
             <IndustryHero industry={industry} />
             <Features industrySlug={slug} />

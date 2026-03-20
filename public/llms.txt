@@ -1,0 +1,42 @@
+# GrowLocal 360
+
+> GrowLocal 360 is a platform for local service businesses and marketing agencies that builds GBP-first SEO websites, turns completed jobs into proof-driven content, and helps businesses rank higher in local search.
+
+## What is GrowLocal 360?
+
+GrowLocal 360 helps local service businesses (HVAC, plumbing, roofing, landscaping, appliance repair, pressure washing, fencing, handyman) launch websites structured around their Google Business Profile categories. The platform includes:
+
+- **GBP-First Website Architecture**: Websites built around actual Google Business Profile service categories for maximum local search relevance.
+- **Job Snaps**: A system that lets users upload photos from completed jobs, generate AI-assisted descriptions, and publish that proof to their website and Google Business Profile — turning every completed job into SEO content, trust signals, and local authority.
+- **AI Content Generation**: Service pages, category pages, service area pages, and brand pages generated with AI based on real business data.
+- **Google Business Profile Integration**: Sync GBP data and auto-post completed jobs to keep the profile active and visible.
+- **Review Management**: Automated review requests and AI-powered replies.
+- **Lead Capture & CRM**: Built-in lead forms, appointment booking, and pipeline management.
+- **Missed Call Text Back**: Automatic text response when calls are missed.
+- **Multi-location & Microsite Support**: Single-location, multi-location, and exact-match domain microsite website structures.
+
+## Website Types
+
+- **Single Location**: For businesses focused on one primary GBP and city.
+- **Multi-Location**: For brands managing multiple GBPs or service areas.
+- **Microsite (EMD)**: For targeted campaigns or exact-match domain opportunities.
+
+## Industries Served
+
+- HVAC
+- Appliance Repair
+- Pressure Washing
+- Plumbing
+- Fence Building
+- Handyman Services
+- Roofing
+- Landscaping
+
+## Pricing
+
+Free to create an account. Users pay only when they activate a website.
+
+## Links
+
+- Website: https://www.growlocal360.com
+- App: https://app.growlocal360.com

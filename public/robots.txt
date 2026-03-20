@@ -1,0 +1,18 @@
+# GrowLocal 360 — www.growlocal360.com
+User-agent: *
+Allow: /
+
+Sitemap: https://www.growlocal360.com/sitemap.xml
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
