@@ -81,7 +81,7 @@ export default function JobSnaps() {
 
                 {/* Headline */}
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6">
-                    Turn Every Job Into <span className="bg-[#03d9c1] text-black px-2">Proof</span>
+                    Turn Every Job Into <span className="bg-[#00ef99] text-black px-2">Proof</span>
                 </h2>
 
                 {/* Description */}

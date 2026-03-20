@@ -17,7 +17,7 @@ export default function Hero() {
                     {/* Main Headline */}
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight leading-[1.1]">
                         Stop Losing Local Jobs to Competitors{' '}
-                        <span className="bg-[#03d9c1] px-2">Ranking Above You</span>
+                        <span className="bg-[#00ef99] px-2">Ranking Above You</span>
                     </h1>
 
                     {/* Subheadline */}

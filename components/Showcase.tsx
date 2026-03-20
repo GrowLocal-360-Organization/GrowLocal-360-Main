@@ -25,13 +25,13 @@ export default function Showcase() {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-400">
                     <span className="flex items-center gap-2">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#03d9c1]">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#00ef99]">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                         Free account. Pay only when you activate a site.
                     </span>
                     <span className="flex items-center gap-2">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#03d9c1]">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#00ef99]">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                         No credit card required.
