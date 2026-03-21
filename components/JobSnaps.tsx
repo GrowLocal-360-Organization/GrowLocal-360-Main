@@ -84,6 +84,15 @@ export default function JobSnaps() {
                     Turn Every Job Into <span className="bg-[#00ef99] text-black px-2">Proof</span>
                 </h2>
 
+                {/* Job Snaps Illustration */}
+                <div className="flex justify-center mb-12">
+                    <img
+                        src="/images/Job-Snaps-Checkins-Grow-Local-360-White.svg"
+                        alt="Job Snaps and Check-ins workflow — upload photos, generate content, publish to website and Google Business Profile"
+                        className="w-full max-w-4xl h-auto"
+                    />
+                </div>
+
                 {/* Description */}
                 <p className="text-center text-gray-300 max-w-3xl mx-auto mb-16 text-lg leading-relaxed">
                     Your best marketing is the work you already do. Job Snaps lets you upload photos from completed jobs,
